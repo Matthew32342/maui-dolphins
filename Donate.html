@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribute To The Cause</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="donate-page"> 
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html" class="home-link">
+      <img src="https://i.postimg.cc/G3yzHmsv/Chat-GPT-Image-May-20-2025-10-25-34-AM-1.png" alt="logo" class="logo">
+    </a>
+    <ul>
+      <li><a href="About-Us.html">ABOUT US</a></li>
+      <li><a href="Game.html">GAME</a></li>
+      <li><a href="Donate.html" class="active">DONATE</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="donate-hero">
+    <div class="donate-hero-text">
+      <h1>Contribute To The Cause</h1>
+      <p>Your donation helps preserve one of the rarest marine species on Earth.</p>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="donation-section">
+    <div class="donation-container">
+      <div class="donation-img">
+        <img src="Donate page image.jpeg" alt="Māui Dolphin">
+      </div>
+
+      <div class="donation-box">
+        <h2>Donate And Make A Difference</h2>
+        <form id="donationForm" onsubmit="return showThankYou(event)">
+          <div class="input-group">
+            <label>First Name</label>
+            <input type="text" name="firstName" required>
+          </div>
+
+          <div class="input-group">
+            <label>Last Name</label>
+            <input type="text" name="lastName" required>
+          </div>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+          </div>
+
+          <div class="input-group">
+            <label>Amount (NZD)</label>
+            <input type="number" name="amount" placeholder="Enter amount" required>
+          </div>
+
+          <!-- Credit Card Details Section -->
+          <h3 style="color:white; margin-bottom:10px;">Credit Card Information</h3>
+
+          <div class="input-group">
+            <label>Name on Card</label>
+            <input type="text" name="cardName" placeholder="Full name as on card" required>
+          </div>
+
+          <div class="input-group">
+            <label>Card Number</label>
+            <input type="text" name="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19" required>
+          </div>
+
+          <div class="input-group">
+            <label>Expiration Date</label>
+            <input type="month" name="expDate" required>
+          </div>
+
+          <div class="input-group">
+            <label>CVV</label>
+            <input type="text" name="cvv" placeholder="123" maxlength="4" required>
+          </div>
+
+          <button type="submit" class="donate-btn">Donate</button>
+        </form>
+
+        <p id="thankYouMessage" class="thank-you-message">Thank you for your generous contribution!</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showThankYou(event) {
+      event.preventDefault();
+      document.getElementById('donationForm').style.display = 'none';
+      document.getElementById('thankYouMessage').style.display = 'block';
+      return false;
+    }
+  </script>
+
+    <!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 Māui Dolphin Awareness Project</p>
+  <p>Created by Matthew | <a href="Contact-Us.html">Contact Us</a></p>
+</footer>
+
+
+</body>
+</html>

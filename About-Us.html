@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Maui Dolphins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page"> 
+
+  <!-- Navigation Bar-->
+  <div class="navbar">
+    <a href="index.html" class="home-link">
+      <img src="https://i.postimg.cc/G3yzHmsv/Chat-GPT-Image-May-20-2025-10-25-34-AM-1.png" alt="logo" class="logo">
+    </a>
+    <ul>
+      <li><a href="About-Us.html">ABOUT US</a></li>
+      <li><a href="Game.html">GAME</a></li>
+      <li><a href="Donate.html">DONATE</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="about-hero">
+    <div class="about-hero-text">
+      <h1>Protecting Maui Dolphins: A Shared Responsibility</h1>
+      <p class="subtitle">Learn about the Māui dolphin, the threats they face, and how you can help.</p>
+    </div>
+  </section>
+
+  <!-- Info Section (grid of boxes + image + video) -->
+  <section class="about-info">
+    <div class="info-section-container">
+      <h2>The Māui Dolphin's Unique Life</h2>
+
+      <div class="info-grid">
+        <!-- Repeat your 6 info-boxes with content + extra content -->
+        <article class="info-box">
+          <h3>Protect</h3>
+          <div class="content">
+            <p>Māui dolphins are protected through fishing restrictions in some areas, but more coverage is needed. Avoid supporting fisheries that use gillnets in their habitat and support protected area expansion.</p>
+          </div>
+          <div class="extra-content">
+            <p>Additional info: The New Zealand government monitors dolphin populations and enforces regulations to minimize accidental catch. Local volunteers often participate in beach cleanups to reduce marine hazards.</p>
+          </div>
+        </article>
+
+        <article class="info-box">
+          <h3>Preserve</h3>
+          <div class="content">
+            <p>Preserving clean coastal waters helps prey species thrive. Reduce runoff and plastic pollution, and back community efforts that restore coastal habitats and water quality.</p>
+          </div>
+          <div class="extra-content">
+            <p>Additional info: Participating in beach cleanups or community projects can directly improve water quality and provide safe habitats for dolphins and other marine life.</p>
+          </div>
+        </article>
+
+        <article class="info-box">
+          <h3>Population</h3>
+          <div class="content">
+            <p>There are only a few dozen adult Māui dolphins left—they are one of the rarest dolphins in the world. Small population size means every individual is critical.</p>
+          </div>
+          <div class="extra-content">
+            <p>Additional info: Scientists track the population using photo identification and acoustic monitoring to understand threats and implement conservation strategies.</p>
+          </div>
+        </article>
+
+        <article class="info-box">
+          <h3>Habitats</h3>
+          <div class="content">
+            <p>Māui dolphins live close to shore on the west coast of North Island, NZ. They use shallow bays and coastal shelves areas vulnerable to human activity and development.</p>
+          </div>
+          <div class="extra-content">
+            <p>Additional info: Avoid boating in sensitive areas and report sightings to help researchers map dolphin movements and protect critical habitats.</p>
+          </div>
+        </article>
+
+        <article class="info-box">
+          <h3>Awareness</h3>
+          <div class="content">
+            <p>Public awareness drives conservation. Share accurate information, support monitoring programmes, and report sightings to local conservation groups to help track the population.</p>
+          </div>
+          <div class="extra-content">
+            <p>Additional info: Social media campaigns, school projects, and community talks help increase knowledge and promote protective measures.</p>
+          </div>
+        </article>
+
+        <article class="info-box">
+          <h3>How to Help</h3>
+          <div class="content">
+            <p>Donate to trusted organisations, choose sustainable seafood, reduce coastal pollution, and support policies that ban harmful fishing gear in Māui dolphin habitat.</p>
+          </div>
+          <div class="extra-content">
+            <p>Additional info: Volunteering, fundraising events, and advocacy for stronger marine protection laws make a real difference for dolphin survival.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Dolphin Image -->
+      <img src="Image page 2.jpeg" alt="Maui Dolphins swimming" class="about-img">
+
+      <!-- Video Section -->
+      <div class="about-video">
+        <h2>Watch and Learn About Māui Dolphins</h2>
+        <div class="video-box">
+          <iframe 
+            width="960" 
+            height="540" 
+            src="https://www.youtube.com/embed/AgmhyOEX57M" 
+            title="Maui Dolphins Documentary" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>   
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Māui Dolphin Awareness Project</p>
+    <p>Created by Matthew | <a href="Contact.html">Contact Us</a></p>
+  </footer>
+
+</body>
+
+<script>
+  const boxes = document.querySelectorAll('.info-box');
+  boxes.forEach(box => {
+    box.addEventListener('click', () => {
+      box.classList.toggle('expanded');
+      if(box.classList.contains('expanded')){
+        box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  });
+</script>
+</html>

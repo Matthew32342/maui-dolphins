@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maui Dolphins</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html" class="home-link">
+                <img src="https://i.postimg.cc/G3yzHmsv/Chat-GPT-Image-May-20-2025-10-25-34-AM-1.png" alt="logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="About-Us.html">ABOUT US</a></li>
+                <li><a href="Game.html">GAME</a></li>
+                <li><a href="Donate.html">DONATE</a></li>
+                <li><a href="Contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Page Content -->
+    <section class="contact-hero">
+        <h1>Contact The Team</h1>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-form">
+            <form id="contactForm" onsubmit="return showThankYouMessage(event)">
+                <label>Name</label>
+                <input type="text" name="firstName" required />
+
+                <label>Surname</label>
+                <input type="text" name="lastName" required />
+
+                <label>Email</label>
+                <input type="email" name="email" required />
+
+                <label>Message</label>
+                <textarea name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="contactThankYou" class="thank-you-message" style="display:none; text-align:center; margin-top:20px; color:#000; font-weight:bold; font-size:1.2rem;">
+                Thank you! We will get back to you as soon as possible.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function showThankYouMessage(event) {
+            event.preventDefault(); 
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('contactThankYou').style.display = 'block';
+            return false;
+        }
+    </script>
+    
+        <!-- Footer -->
+    <footer class="footer">
+  <p>&copy; 2025 Māui Dolphin Awareness Project</p>
+  <p>Created by Matthew | <a href="Contact-Us.html">Contact Us</a></p>
+</footer>
+
+  </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Maui Dolphins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page"> 
+
+  <!-- Navigation Bar-->
+  <div class="navbar">
+    <a href="index.html" class="home-link">
+      <img src="https://i.postimg.cc/G3yzHmsv/Chat-GPT-Image-May-20-2025-10-25-34-AM-1.png" alt="logo" class="logo">
+    </a>
+    <ul>
+      <li><a href="About-Us.html">ABOUT US</a></li>
+      <li><a href="Game.html">GAME</a></li>
+      <li><a href="Donate.html">DONATE</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <!-- Intro Section  -->
+  <section class="game-intro">
+    <div class="game-intro-img">
+      <img src="Quiz-Photo.jpeg" alt="Maui Dolphin">
+    </div>
+    <div class="game-intro-text">
+      <h2>Dive Deeper into Maui Dolphins</h2>
+      <p>
+        Maui’s dolphins are among the rarest in the world. Learn more about their unique lives,
+        the challenges they face, and why protecting them is so important.
+      </p>
+      <p>
+        Now it’s your turn test your knowledge below and see how much you really know!
+      </p>
+    </div>
+  </section>
+  
+  <!-- Quiz Section -->
+  <section class="game-section">
+    <h2 id="question">Where are Māui dolphins found?</h2>
+
+    <!-- Start overlay -->
+<div id="start-overlay" class="start-overlay">
+  <div class="start-overlay-content">
+    <h1>Welcome to the Maui Dolphins Quiz!</h1>
+    <button id="start-btn" class="btn">Start Quiz</button>
+  </div>
+</div>
+
+<!-- Restart button -->
+<button id="restart-btn" class="restart-btn">Restart Quiz</button>
+
+    <div class="quiz-box">
+      <ul id="options">
+        <li data-letter="A">South Island of New Zealand</li>
+        <li data-letter="B">East coast of New Zealand's North Island</li>
+        <li data-letter="C">West coast of New Zealand's North Island</li>
+        <li data-letter="D">Around the Chatham Islands</li>
+      </ul>
+      <button id="next-btn">Next</button>
+    </div>
+  </section>
+
+  <script src="quiz.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Māui Dolphin Awareness Project</p>
+    <p>Created by Matthew | <a href="Contact.html">Contact Us</a></p>
+  </footer>
+</body>
+</html>
